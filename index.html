@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>BLnews</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="./img/logorecortado.jpg" alt="Logo" class="logo">
+        </div>
+
+        <div class="filter-container">
+            <label for="category">Categoría:</label>
+            <select id="category"></select>
+            <button id="filterButton">Filtrar</button>
+        </div>
+
+    <div class="headerNews">
+        <h1>Latest news</h1>
+        <div class="mainCont" id="firstNewsContainer"></div>
+    </div>  
+
+    </header>
+    <main>
+        <div id="seccionEconomia">
+            <h4>Economics News:</h4>
+            <div class="economicsSection" id="economicsContainer"></div>
+        </div>
+
+        <div id="seccionSports">
+            <h4>Sports News:</h4>
+            <div id="sportContainer"></div>
+        </div>
+
+        <h4>More News:</h4>
+        
+        <div id="newsContainer">
+            
+        </div>
+
+        <div class="banner">
+            <img src="./img/logorecortado.jpg" alt="Logo" class="logo">
+        </div>
+        
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
