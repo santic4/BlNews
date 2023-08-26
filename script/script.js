@@ -118,7 +118,7 @@ fetch(url)
 
       firstNewsContainer.appendChild(firstNewsSection);
     } else {
-      console.log("No se encontró ninguna noticia con imagen disponible.");
+     return ("No news with available image was found.")
     }
   })
   .catch(error => {
@@ -201,6 +201,7 @@ function filterNewsByCategory(category) {
   const noticias1 = document.getElementsByClassName("headerNews");
   const noticias2 = document.getElementById("seccionEconomia");
   const noticias3 = document.getElementById("seccionSports");
+  
 
   // Si se selecciona la categoría "General", se muestran todas las noticias por defecto
   if (category === "General") {
@@ -216,6 +217,7 @@ function filterNewsByCategory(category) {
               }
               noticias2.style.display = "block";
               noticias3.style.display = "block";
+             
           })
           .catch(error => {
               console.error('Error:', error);
@@ -236,6 +238,7 @@ function filterNewsByCategory(category) {
               }
               noticias2.style.display = "none";
               noticias3.style.display = "none";
+              
           })
           .catch(error => {
               console.error('Error:', error);
@@ -246,7 +249,9 @@ function filterNewsByCategory(category) {
 // Agregar evento al botón de filtrar para aplicar el filtro por categoría
 filterButton.addEventListener("click", () => {
   const selectedCategory = categorySelect.value;
+  const tittleh4 = document.getElementsByClassName("tittleh4")
   if (selectedCategory !== "") {
     filterNewsByCategory(selectedCategory);
+    
   }
 });
