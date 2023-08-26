@@ -5,19 +5,29 @@ body{
     background-color: rgba(255, 255, 255, 0.495);
 }
 
+main{
+  margin: 0px 150px;
+}
+
 /*
 */
 
 .banner{
-  height: 80px;
-  background-color: rgb(38, 34, 70);
-}
-
-.logo{
-  height: 80px;
- justify-content: center;
+  display: flex;
+  background-color: #09396c;
+  justify-content: start;
+  height: 110px;
 
 }
+
+
+img{
+ width: auto;
+ background-size: contain;
+height: auto;
+margin-left: 200px;
+}
+
 
 .filter-container {
   display: flex;
@@ -336,3 +346,6 @@ h4 {
   margin-bottom: -20px;
  }
 
+footer{
+  width: 100%
+}
