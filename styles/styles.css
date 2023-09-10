@@ -95,7 +95,6 @@ button#filterButton {
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 480px;
-    
   }
   
   .news-image img {
@@ -252,6 +251,7 @@ button#filterButton {
   font-size: auto;
   max-height: 50px;
   min-height: 50px;
+
   }
 
   .news-content p{
@@ -370,3 +370,4 @@ footer{
     margin-right: 0;
   }
 }
+
