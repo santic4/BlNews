@@ -506,7 +506,7 @@ footer{
   }
 
   .banner {
-   justify-content: center;
+   justify-content: start;
    align-self: center;
    align-content: center;
   }
